@@ -29,14 +29,13 @@ def f01b(data):
 # Tests to use the sample data and ensure the functions are working
 # Run `$ python -m unittest day01.py` in terminal to run test.
 # unittest module will recognize test methods as any method that begins with test
-class Testf01a(unittest.TestCase):
+class Testf01(unittest.TestCase):
   def test_f01a(self):
     test_data = np.array([199, 200, 208, 210, 200, 207, 240, 269, 260, 263])
     actual = f01a(test_data)
     expected = 7
     self.assertEqual(actual, expected)
     
-class Testf01b(unittest.TestCase):
   def test_f01b(self):
     test_data = np.array([607, 618, 618, 617, 647, 716, 769, 792])
     actual = f01a(test_data)
