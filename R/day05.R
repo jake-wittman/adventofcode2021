@@ -140,7 +140,7 @@ f05b <- function(x) {
     bind_rows() %>% 
     mutate(across(everything(), ~ as.numeric(.)))
   #Shamelessly copied from @drob
-  horizontal_vertical1 <- points_df %>% 
+  horizontal_vertical <- points_df %>% 
     mutate(x = map2(x1, x2, seq),
            y = map2(y1, y2, seq)) %>% 
     filter(x1 == x2 | y1 == y2) %>% 
